@@ -1,0 +1,11 @@
+import math 
+h = float(input()) 
+a = float(input()) # !!углы a и b задаются в радианах!! 
+b = float(input()) 
+g = math.pi-(a+b) 
+A = h//math.sin(b) 
+B = h//math.sin(a) 
+S = 0.5*A*B*math.sin(g) 
+C = 2*S//h 
+print("неизвестный угол ", g) 
+print("неизвестные стороны ", A, " ", B, " ", C)

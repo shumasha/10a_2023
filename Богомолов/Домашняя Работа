@@ -1,4 +1,4 @@
-program Богомолов Саша;
+program БогомоловСаша;
 uses graphabc;
 begin
   line(50,40,100,40);
@@ -18,4 +18,4 @@ begin
  line(150,20,30,110);
  rectangle(140,100,120,120);
  rectangle(120,40,110,90); 
-end
+end.

@@ -1,0 +1,20 @@
+﻿uses Graphabc;
+begin;
+setpencolor(clBlack);
+setbrushcolor(clBlack);
+circle(80,40,10);
+line(80,45,90,100);
+line(80,100,100,100);
+line(100,100,115,110);
+line(115,110,115,130);
+line(115,130,120,130);
+line(80,100,70,115);
+line(70,115,70,130);
+line(70,130,65,130);
+line(70,55,95,45);
+line(95,45,95,65);
+line(95,65,110,65);
+line(110,65,115,70);
+line(70,55,60,75);
+line(60,75,55,80);
+end.

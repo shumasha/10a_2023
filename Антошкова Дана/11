@@ -1,0 +1,7 @@
+program dz;
+var a:real;
+begin
+  write('Введите длину письма ручки указанную на упаковке ');
+  readln(a);
+  writeln('Колчество тетрадей ',a/96:0:0);
+end.

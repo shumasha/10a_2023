@@ -1,0 +1,26 @@
+Program variantdevyat;
+Var
+  a, b, S, c, alpha, betta, gamma, H, P: real;
+  x, ar, br, gr: real;{alpha,beta,gamma в радианах}
+  begin
+    write('Введите длины двух сторон треугольника и площадь:');
+    readln(a,b,S);
+    x:=2*S/(a*b);
+    if x>1 then writeln('Такой треугольник невозможен')
+    else
+    begin
+      gr := ArcSin(x);
+      c := Sqrt(Sqr(a) + Sqr(b) - 2 * a * b * Cos(gr));
+      P := a + b + c;
+      ar := ArcSin(a * Sin(gr) / c);
+      br := Pi - (ar + gr);
+      H := b * Sin(ar);
+      alpha := ar * 180 / Pi;
+      betta := br * 180 / Pi;
+      gamma := 180 - (alpha + betta);
+      writeln('Решение треугольника');
+      writeln('a=', a, ', b=', b, ', c=', c:0:5);
+      writeln('Alpha=', alpha:0:2, ', Betta=', betta:0:2, ', Gamma=', gamma:0:2);
+      writeln('P=', P:0:5, ', H=', H:0:5, ', S=', S)
+    end;
+  end.

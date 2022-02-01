@@ -1,0 +1,12 @@
+program muar;
+uses GraphABC;
+var x,i:integer;
+begin
+  x:=3;
+   for i:=1 to 160 do
+   begin
+   line(x,0,x,1000);
+   x:=x+5;
+   end;
+
+end.

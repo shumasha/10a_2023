@@ -1,7 +1,0 @@
-program abc;
-var a,b,c:real;
-begin
-writeln('Введите стороны треугольника через пробел');
-readln(a,b,c);
-writeln((a=b)and(b=c));
-end.

@@ -1,0 +1,11 @@
+from tkinter import*
+root = Tk()
+root.title('кириешки')
+root.geometry('500x400+300+200')
+nadpis_R = Label(root, text = 'Введите радиус', font = 'Arial 12')
+nadpis_R.pack()
+nadpis_Pl = Label(root, text = 'Площадь:', font = 'Arial 12')
+nadpis_Pl.pack()
+r = DoubleVar()
+vvod_radiusa = Entry(root, width = 10, textvariable = r)
+vvod_radiusa.pack()
